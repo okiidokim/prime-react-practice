@@ -1,5 +1,6 @@
 import type { ComponentType } from 'react';
 import App from './App';
+import { TmpPage } from './pages/TmpPage';
 
 export interface RouteConfig {
   path: string;
@@ -16,5 +17,11 @@ export const routes: RouteConfig[] = [
     icon: 'pi pi-home',
     Component: App,
     index: true,
+  },
+  {
+    path: '/like-list',
+    label: '찜',
+    icon: 'pi pi-heart-fill',
+    Component: TmpPage,
   },
 ];
