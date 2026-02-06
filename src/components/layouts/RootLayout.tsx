@@ -19,7 +19,7 @@ export default function RootLayout() {
   }));
 
   const start = (
-    <span onClick={() => navigate('/')} className="mr-6">
+    <span onClick={() => navigate('/')} className="hidden mr-6 md:block">
       Smart Cart
     </span>
   );
@@ -30,7 +30,7 @@ export default function RootLayout() {
         <Menubar
           model={navItems}
           start={start}
-          className="!px-6"
+          className="!px-3 md:!px-6"
           pt={{
             icon: { className: '!mr-0' },
           }}
