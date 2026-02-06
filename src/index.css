@@ -1,4 +1,5 @@
 @import 'tailwindcss';
+@import 'tailwindcss-primeui';
 
 button {
   padding-left: 0.5rem;
